@@ -1,0 +1,1499 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxdslrm4isncm"]
+
+[ext_resource type="Texture2D" uid="uid://3xcljsrdw3kt" path="res://chess_piece_king_on_transparent_background__by_prussiaart_dcpnfcn-pre.png" id="1_g2c58"]
+[ext_resource type="Script" path="res://Player.gd" id="2_tv3xt"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, -320)
+
+[node name="Really Ugly Chessboard" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 608.0
+offset_top = -352.0
+offset_right = 648.0
+offset_bottom = -312.0
+metadata/_edit_use_anchors_ = true
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = -320.0
+offset_right = 64.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -320.0
+offset_right = -64.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -320.0
+offset_right = -192.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = -320.0
+offset_right = -320.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = -320.0
+offset_right = -448.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect7" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = -320.0
+offset_right = 320.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect8" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -320.0
+offset_right = 448.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect9" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = -320.0
+offset_right = 576.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = -320.0
+offset_right = 192.0
+offset_bottom = -256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect10" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -320.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect11" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = -320.0
+offset_right = -128.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect12" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = -320.0
+offset_right = -256.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect13" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = -320.0
+offset_right = -384.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect14" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = -320.0
+offset_right = -512.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect15" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -320.0
+offset_right = 256.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect16" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -320.0
+offset_right = 384.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect17" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = -320.0
+offset_right = 512.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect18" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -320.0
+offset_right = 128.0
+offset_bottom = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect19" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -256.0
+offset_right = 128.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect20" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -256.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect21" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = -256.0
+offset_right = -128.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect22" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = -256.0
+offset_right = -256.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect23" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = -256.0
+offset_right = -384.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect24" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -256.0
+offset_right = 384.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect25" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = -256.0
+offset_right = 512.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect26" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = -256.0
+offset_right = -512.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect27" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -256.0
+offset_right = 256.0
+offset_bottom = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect28" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = -256.0
+offset_right = 64.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect29" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -256.0
+offset_right = -64.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect30" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -256.0
+offset_right = -192.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect31" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = -256.0
+offset_right = -320.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect32" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = -256.0
+offset_right = -448.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect33" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = -256.0
+offset_right = 320.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect34" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -256.0
+offset_right = 448.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect35" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = -256.0
+offset_right = 576.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect36" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = -256.0
+offset_right = 192.0
+offset_bottom = -192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect37" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = -192.0
+offset_right = 64.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect38" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -192.0
+offset_right = -64.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect39" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -192.0
+offset_right = -192.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect40" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = -192.0
+offset_right = -320.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect41" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = -192.0
+offset_right = -448.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect42" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = -192.0
+offset_right = 320.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect43" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -192.0
+offset_right = 448.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect44" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = -192.0
+offset_right = 576.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect45" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = -192.0
+offset_right = 192.0
+offset_bottom = -128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect46" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -192.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect47" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = -192.0
+offset_right = -128.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect48" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = -192.0
+offset_right = -256.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect49" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = -192.0
+offset_right = -384.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect50" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = -192.0
+offset_right = -512.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect51" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -192.0
+offset_right = 256.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect52" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -192.0
+offset_right = 384.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect53" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = -192.0
+offset_right = 512.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect54" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -192.0
+offset_right = 128.0
+offset_bottom = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect55" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect56" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -128.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect57" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = -128.0
+offset_right = -128.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect58" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = -128.0
+offset_right = -256.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect59" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = -128.0
+offset_right = -384.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect60" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -128.0
+offset_right = 384.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect61" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = -128.0
+offset_right = 512.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect62" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = -128.0
+offset_right = -512.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect63" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -128.0
+offset_right = 256.0
+offset_bottom = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect64" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = -128.0
+offset_right = 64.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect65" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -128.0
+offset_right = -64.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect66" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -128.0
+offset_right = -192.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect67" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = -128.0
+offset_right = -320.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect68" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = -128.0
+offset_right = -448.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect69" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = -128.0
+offset_right = 320.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect70" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -128.0
+offset_right = 448.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect71" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = -128.0
+offset_right = 576.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect72" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = -128.0
+offset_right = 192.0
+offset_bottom = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect73" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = -64.0
+offset_right = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect74" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = -64.0
+offset_right = -64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect75" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = -64.0
+offset_right = -192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect76" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = -64.0
+offset_right = -320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect77" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = -64.0
+offset_right = -448.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect78" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = -64.0
+offset_right = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect79" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -64.0
+offset_right = 448.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect80" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = -64.0
+offset_right = 576.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect81" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = -64.0
+offset_right = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect82" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = -64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect83" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = -64.0
+offset_right = -128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect84" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = -64.0
+offset_right = -256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect85" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = -64.0
+offset_right = -384.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect86" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = -64.0
+offset_right = -512.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect87" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = -64.0
+offset_right = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect88" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -64.0
+offset_right = 384.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect89" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = -64.0
+offset_right = 512.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect90" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -64.0
+offset_right = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect91" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 128.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect92" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect93" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_right = -128.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect94" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_right = -256.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect95" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_right = -384.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect96" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_right = 384.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect97" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_right = 512.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect98" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_right = -512.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect99" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_right = 256.0
+offset_bottom = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect100" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect101" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_right = -64.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect102" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_right = -192.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect103" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_right = -320.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect104" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_right = -448.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect105" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_right = 320.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect106" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_right = 448.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect107" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_right = 576.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect108" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_right = 192.0
+offset_bottom = 64.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect109" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 64.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect110" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = 64.0
+offset_right = -64.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect111" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = 64.0
+offset_right = -192.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect112" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = 64.0
+offset_right = -320.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect113" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = 64.0
+offset_right = -448.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect114" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 64.0
+offset_right = 320.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect115" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect116" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 64.0
+offset_right = 576.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect117" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 192.0
+offset_bottom = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect118" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = 64.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect119" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = 64.0
+offset_right = -128.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect120" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 64.0
+offset_right = -256.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect121" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = 64.0
+offset_right = -384.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect122" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = 64.0
+offset_right = -512.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect123" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 256.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect124" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect125" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 64.0
+offset_right = 512.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect126" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect127" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect128" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = 128.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect129" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = 128.0
+offset_right = -128.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect130" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 128.0
+offset_right = -256.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect131" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = 128.0
+offset_right = -384.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect132" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 128.0
+offset_right = 384.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect133" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 128.0
+offset_right = 512.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect134" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = 128.0
+offset_right = -512.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect135" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 128.0
+offset_right = 256.0
+offset_bottom = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect136" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 64.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect137" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = 128.0
+offset_right = -64.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect138" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = 128.0
+offset_right = -192.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect139" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = 128.0
+offset_right = -320.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect140" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = 128.0
+offset_right = -448.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect141" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 128.0
+offset_right = 320.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect142" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 128.0
+offset_right = 448.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect143" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 128.0
+offset_right = 576.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect144" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 192.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect145" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = 192.0
+offset_right = 64.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect146" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = 192.0
+offset_right = -64.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect147" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = 192.0
+offset_right = -192.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect148" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = 192.0
+offset_right = -320.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect149" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = 192.0
+offset_right = -448.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect150" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 192.0
+offset_right = 320.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect151" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 192.0
+offset_right = 448.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect152" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 192.0
+offset_right = 576.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect153" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 192.0
+offset_bottom = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect154" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = 192.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect155" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = 192.0
+offset_right = -128.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect156" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 192.0
+offset_right = -256.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect157" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = 192.0
+offset_right = -384.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect158" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = 192.0
+offset_right = -512.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect159" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 192.0
+offset_right = 256.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect160" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect161" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 192.0
+offset_right = 512.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect162" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 192.0
+offset_right = 128.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect163" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 128.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect164" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -64.0
+offset_top = 256.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect165" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = 256.0
+offset_right = -128.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect166" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 256.0
+offset_right = -256.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect167" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -448.0
+offset_top = 256.0
+offset_right = -384.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect168" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 256.0
+offset_right = 384.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect169" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 512.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect170" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -576.0
+offset_top = 256.0
+offset_right = -512.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect171" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 256.0
+offset_right = 256.0
+offset_bottom = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect172" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_top = 256.0
+offset_right = 64.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect173" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -128.0
+offset_top = 256.0
+offset_right = -64.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect174" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -256.0
+offset_top = 256.0
+offset_right = -192.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect175" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -384.0
+offset_top = 256.0
+offset_right = -320.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect176" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = -512.0
+offset_top = 256.0
+offset_right = -448.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect177" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 256.0
+offset_right = 320.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect178" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 256.0
+offset_right = 448.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect179" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 256.0
+offset_right = 576.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect180" type="ColorRect" parent="Really Ugly Chessboard"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 192.0
+offset_bottom = 320.0
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(-288, 32)
+scale = Vector2(0.0715884, 0.0715884)
+texture = ExtResource("1_g2c58")
+script = ExtResource("2_tv3xt")
